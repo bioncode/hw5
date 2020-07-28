@@ -1,0 +1,15 @@
+<%- include("partials/header.ejs") %>
+    <body>
+        <main>
+            <h1>Cool Images</h1>
+            <form action="/search">
+                <input class="search-input" type="text" placeholder="Type keyword" name="keyword"/>
+                <br><br>
+                <button class="search-button">Search</button>
+            </form>
+            <hr>
+            <img class="image" src='<%= imageUrl %>' width="200" height="200"/>
+        </main>
+<%- include("partials/footer.ejs") %>
+    </body>
+</html>
