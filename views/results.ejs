@@ -1,11 +1,10 @@
 <%- include("partials/header.ejs") %>
     <body>
         <main>
-            <h1>Cool Images</h1>
+            <h1 class="my-3">Cool Images from Pixabay</h1>
             <form action="/search">
                 <input class="search-input" type="text" placeholder="Type keyword" name="keyword"/>
-                <br><br>
-                <button class="search-button">Search</button>
+                <button class="search-button brn btn-primary">Search</button>
                 <br><a class="keyword"> Keyword: <%= keyword %></a>
                 <br><a class="keyword-count"> Keyword Count: <%= keywordCount %></a>
                 <br><a href="/getKeywords">See Keyword Counts</a>
